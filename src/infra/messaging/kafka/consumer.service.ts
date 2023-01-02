@@ -9,7 +9,7 @@ export class KafkaConsumerService
   constructor() {
     super({
       client: {
-        clientId: 'notitifications',
+        clientId: 'notifications',
         brokers: ['natural-raptor-8312-us1-kafka.upstash.io:9092'],
         sasl: {
           mechanism: 'scram-sha-256',
