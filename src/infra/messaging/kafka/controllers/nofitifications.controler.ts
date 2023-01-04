@@ -12,7 +12,7 @@ interface SendNotificationPayload {
 export class NotificationsController {
   constructor(private sendNotification: SendNotification) {}
 
-  @EventPattern('notifications.send-notifications')
+  @EventPattern('send-notification')
   async hanbleSendNotification(
     @Payload() { category, content, recipientId }: SendNotificationPayload,
   ) {
