@@ -3,7 +3,7 @@ version: '3'
 services:
   ms-notification:
     build: .
-    command: npm run start:dev
+    command: npm run start
   zookeeper:
     image: wurstmeister/zookeeper
     container_name: zookeeper
